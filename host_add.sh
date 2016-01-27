@@ -20,7 +20,7 @@ echo "#VirtualHost Config File for host $HOST
 
 	<Directory /home/shinekami/work/web/server/$HOST/>
 		Options Indexes FollowSymLinks
-		AllowOverride None
+		AllowOverride All
 		Require all granted
 	</Directory>
 
@@ -33,6 +33,7 @@ DIR="/home/shinekami/work/web/server/$HOST/"
 
 mkdir -p $DIR > /dev/null
 chmod -R 777 "$DIR/../";
+chown -R www-data:www-data $DIR;
 
 echo "127.0.0.1	$HOST www.$HOST" >> /etc/hosts
 
