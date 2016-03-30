@@ -32,8 +32,8 @@ echo "#VirtualHost Config File for host $HOST
 DIR="/home/shinekami/work/web/server/$HOST/"
 
 mkdir -p $DIR > /dev/null
-chmod -R 777 "$DIR/../";
-chown -R www-data:www-data $DIR;
+chmod -R 755 "$DIR/../";
+chown -R shinekami:shinekami $DIR;
 
 echo "127.0.0.1	$HOST www.$HOST" >> /etc/hosts
 
