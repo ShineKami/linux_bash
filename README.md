@@ -1,5 +1,5 @@
 # linux_bash
-My bash scripts for linux
-- Install full LampServer(PHP7, MySQL5.7, Apache2) 
+Bash scripts for linux
+- Install LocalWebServer and PHP7.0(PHP7, MySQL) 
 - Create/Remove Virtual host for Apache2.
 - Enable/Disable sites for Nginx
